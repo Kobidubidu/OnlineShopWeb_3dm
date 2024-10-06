@@ -1,0 +1,148 @@
+/* Reset default margin dan padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Memudahkan pengaturan lebar dan tinggi elemen */
+}
+
+/* Gaya untuk body */
+body {
+    font-family: Arial, sans-serif; /* Mengatur font dasar */
+    line-height: 1.6; /* Jarak antar baris */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex; /* Menyusun elemen navbar dalam satu baris */
+    justify-content: space-between; /* Memisahkan elemen */
+    align-items: center; /* Vertikal center untuk elemen dalam navbar */
+    padding: 10px 20px;
+    background: rgba(255, 255, 255, 0.8); /* Menjaga navbar sedikit transparan */
+    position: fixed; /* Memastikan navbar selalu di atas */
+    width: 100%; /* Memastikan navbar penuh lebar */
+    top: 0; /* Menempatkan navbar di bagian atas */
+    z-index: 10; /* Pastikan navbar di atas elemen lainnya */
+}
+
+.top-nav-options {
+    display: flex; /* Menyusun opsi navbar dalam satu baris */
+    align-items: center; /* Vertikal center untuk elemen dalam navbar */
+}
+
+.top-nav-options a {
+    color: black; /* Warna teks hitam */
+    text-decoration: none; /* Menghilangkan garis bawah */
+    margin-right: 20px; /* Ruang antar link */
+}
+
+.search-bar {
+    padding: 5px; /* Ruang di dalam search bar */
+    border: 1px solid #ccc; /* Border abu-abu */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+.account-info a {
+    margin-left: 20px; /* Ruang antar link di bagian akun */
+    color: black; /* Warna teks hitam */
+}
+
+/* Logo Styles */
+.logo {
+    flex-grow: 1; /* Memastikan logo berada di tengah */
+    text-align: center; /* Menengahkan teks di dalam logo */
+}
+
+.logo img {
+    width: 80px; /* Ukuran logo */
+}
+
+/* Kategori Styles */
+ul {
+    display: flex; /* Memastikan daftar kategori berada dalam satu baris */
+    list-style: none; /* Menghilangkan bullet */
+    padding: 0; /* Menghapus padding default */
+}
+
+ul li {
+    margin: 0 15px; /* Memberikan jarak antar kategori */
+}
+
+ul li a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: black; /* Warna teks hitam */
+    padding: 5px 10px; /* Ruang di sekitar teks */
+    transition: background-color 0.3s; /* Efek transisi saat hover */
+}
+
+ul li a:hover {
+    background-color: #FFA500; /* Warna saat hover */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative; /* Agar elemen di dalam hero bisa diposisikan di atas */
+    height: 100vh; /* Tinggi hero section menutupi seluruh viewport */
+    display: flex; /* Menggunakan flexbox */
+    justify-content: center; /* Menengahkan konten secara vertikal */
+    align-items: center; /* Menengahkan konten secara horizontal */
+    overflow: hidden; /* Menghindari overflow */
+}
+
+/* Image Container Styles */
+.image-container {
+    width: 100%; /* Lebar penuh */
+    max-height: 80%; /* Maksimal tinggi */
+    overflow: hidden; /* Menghindari overflow */
+}
+
+#hero-image {
+    width: 100%; /* Gambar memenuhi lebar */
+    height: auto; /* Tinggi otomatis sesuai rasio */
+    z-index: 1; /* Menempatkan gambar di layer paling belakang */
+    position: absolute; /* Memastikan gambar berada di lapisan belakang */
+    top: 0; /* Mengatur posisi ke atas */
+    left: 0; /* Mengatur posisi ke kiri */
+}
+
+/* Button Styles */
+.buttons {
+    position: absolute; /* Agar tombol berada di atas gambar */
+    z-index: 2; /* Memastikan tombol di atas gambar */
+    top: 50%; /* Menempatkan tombol di tengah secara vertikal */
+    transform: translateY(-50%); /* Menggeser tombol ke atas untuk menempatkan di tengah */
+}
+
+.prev {
+    left: 10px; /* Posisi tombol sebelumnya di sebelah kiri */
+}
+
+.next {
+    right: 10px; /* Posisi tombol berikutnya di sebelah kanan */
+}
+
+button {
+    background-color: rgba(255, 255, 255, 0.7); /* Latar belakang setengah transparan */
+    border: none; /* Menghilangkan border */
+    color: black; /* Warna teks hitam */
+    padding: 10px 20px; /* Ruang di dalam tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    margin: 0 5px; /* Jarak antar tombol */
+    border-radius: 5px; /* Sudut membulat */
+}
+
+button:hover {
+    background-color: rgba(255, 165, 0, 0.7); /* Latar belakang saat hover */
+}
+.popup {
+    display: none; /* Sembunyikan popup secara default */
+    position: fixed; /* Memastikan popup tetap di atas */
+    z-index: 100; /* Pastikan popup di atas elemen lainnya */
+    left: 0;
+    top: 0;
+    width: 100%; /* Lebar penuh */
+    height: 100%; /* Tinggi penuh */
+    background-color: rgba(0, 0, 0, 0.7); /* Latar belakang hitam transparan */
+    justify-content: center; /* Menengahkan konten */
+    align-items: center; /* Vertikal center untuk konten */
+}

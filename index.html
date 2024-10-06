@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lumin De Luxe - Homepage</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="top-nav-options">
+                <a href="#">Deliver to</a>
+                <a href="#">IDR</a>
+                <a href="#">EN</a>
+                <input type="text" class="search-bar" placeholder="Search...">
+                <div class="account-info">
+                    <a href="#">Account</a>
+                    <a href="#">Cart</a>
+                </div>
+            </div>
+            <div class="logo">
+                <a href="index.html"><img src="/images/logo.jpg" alt="Lumin De Luxe Logo"></a>
+            </div>
+            <ul>
+                <li><a href="LumineDeLuxe/Aksesoris.html">Accessories</a></li>
+                <li><a href="#">Clothes</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Shoes</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="image-container">
+            <img id="hero-image" src="/images/aksesoris.jpg" alt="Aksesoris Collection" loading="lazy">
+        </div>
+        <div class="buttons">
+            <button onclick="changeImage(-1)">&#10094; Previous</button>
+            <button onclick="changeImage(1)">Next &#10095;</button>
+        </div>
+    </section>
+</body>
+</html>
