@@ -1,68 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lumin De Luxe - Aksesoris</title>
-    <link rel="stylesheet" href="/css/aksesoris.css">
+    <link rel="stylesheet" href="/css/aksesoris.css" />
     <script src="/js/aksesoris.js" defer></script>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <div class="navbar">
-            <div class="top-nav-options">
-                <a href="#">Deliver to</a>
-                <a href="#">IDR</a>
-                <a href="#">EN</a>
-                <input type="text" class="search-bar" placeholder="Search...">
-                <div class="account-info">
-                    <a href="#">Account</a>
-                    <a href="#">Cart</a>
-                </div>
-            </div>
-            <div class="logo">
-                <a href="/index.html"><img src="/images/logo.jpg" alt="Lumin De Luxe Logo"></a>
-            </div>
-            <ul>
-                <li><a href="Aksesoris.html">Accessories</a></li>
-                <li><a href="Baju.html">Clothes</a></li>
-                <li><a href="Celana.html">Pants</a></li>
-                <li><a href="Sepatu.html">Shoes</a></li>
-            </ul>
+      <div class="navbar">
+        <div class="top-nav-options">
+          <input type="text" class="search-bar" placeholder="Search..." />
+          <div class="account-info">
+            <a href="#">Account</a>
+            <a href="#">Cart</a>
+          </div>
         </div>
+        <div class="logo">
+          <a href="/index.html"
+            ><img src="/images/logo.jpg" alt="Lumin De Luxe Logo"
+          /></a>
+        </div>
+        <ul>
+          <li><a href="Aksesoris.html">Accessories</a></li>
+          <li><a href="Baju.html">Clothes</a></li>
+          <li><a href="Celana.html">Pants</a></li>
+          <li><a href="Sepatu.html">Shoes</a></li>
+        </ul>
+      </div>
     </header>
 
     <div class="header-section">
-        <h1>Accessories</h1>
+      <h1>Accessories</h1>
     </div>
     <div class="catalog">
-        <div class="product">
-            <img src="/images/aksesoris-1.jpg" alt="Aksesoris 1">
-            <h2>Cincin Berlian AK69</h2>
-            <p>Price: IDR 100,000</p>
-            <button class="show-3d" onclick="showQRCode('/images/iniqrcincin.png')">Show Model 3D</button>
-            <button>Buy</button>
-        </div>
-        <div class="product">
-            <img src="images/aksesoris-2.jpg" alt="Aksesoris 2">
-            <h2>Nama Aksesoris 2</h2>
-            <p>Price: IDR 150,000</p>
-            <button onclick="showQRCode('images/aksesoris-2-qrcode.png')">Show Model 3D</button>
-            <button>Buy</button>
-        </div>
-        <div class="product">
-            <img src="images/aksesoris-3.jpg" alt="Aksesoris 3">
-            <h2>Nama Aksesoris 3</h2>
-            <p>Price: IDR 200,000</p>
-            <button onclick="showQRCode('images/aksesoris-3-qrcode.png')">Show Model 3D</button>
-            <button>Buy</button>
-        </div>
+      <div class="product">
+        <img src="/images/aksesoris-1.jpg" alt="Aksesoris 1" />
+        <h2>Cincin Berlian AK69</h2>
+        <p>Price: IDR 100,000</p>
+        <button class="show-3d" onclick="showQRCode('/images/iniqrcincin.png')">
+          Show Model 3D
+        </button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="images/aksesoris-2.jpg" alt="Aksesoris 2" />
+        <h2>Nama Aksesoris 2</h2>
+        <p>Price: IDR 150,000</p>
+        <button onclick="showQRCode('images/aksesoris-2-qrcode.png')">
+          Show Model 3D
+        </button>
+        <button>Buy</button>
+      </div>
+      <div class="product">
+        <img src="images/aksesoris-3.jpg" alt="Aksesoris 3" />
+        <h2>Nama Aksesoris 3</h2>
+        <p>Price: IDR 200,000</p>
+        <button onclick="showQRCode('images/aksesoris-3-qrcode.png')">
+          Show Model 3D
+        </button>
+        <button>Buy</button>
+      </div>
     </div>
 
     <!-- Popup untuk QR Code -->
     <div id="qrcode-popup" class="popup">
-        <span class="close" onclick="closeQRCode()">&times;</span>
-        <img id="qrcode-image" src="" alt="QR Code">
+      <span class="close" onclick="closeQRCode()">&times;</span>
+      <img id="qrcode-image" src="" alt="QR Code" />
     </div>
-</body>
+  </body>
 </html>
